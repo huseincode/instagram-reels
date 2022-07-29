@@ -1,4 +1,4 @@
-.knobs.befor{
+.knobs:before{
     content: '';
     position :absolute;
     top:4px;
@@ -17,14 +17,14 @@
     box-shadow: 0 20px 25px -5px #000,0 10px 10px -5px #000;
 
 }
-.checkbox.after+.knobs.befor{
+.checkbox:active+.knobs:before{
     width: 46px;
     border-radius: 100px;
 }
-.checkbox:checked:after+.knobs.befor{
+.checkbox:checked:active+.knobs:before{
     margin-left: -26px;
 }
-.checkbox:checked+.knobs.befor{
+.checkbox:checked+.knobs:before{
     content: '';
     left: 32px;
     background-color: #fff;
